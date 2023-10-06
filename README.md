@@ -45,6 +45,7 @@ tmpfs            97M  4.0K   97M   1% /run/user/1000<br/>
 <br/>
 
 ubuntu@ip-172-31-87-243:~$ sudo lsblk<br/><br/>
+
 NAME     MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
 loop0      7:0    0  24.4M  1 loop /snap/amazon-ssm-agent/6312
 loop1      7:1    0  55.6M  1 loop /snap/core18/2745

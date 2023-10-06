@@ -72,7 +72,9 @@ ubuntu@ip-172-31-87-243:~$ ls<br/>
 mydata<br/>
  <br/><br/>
 Mount  /dev/xvdb  to  /home/ubuntu/mydata<br/>
+
 ubuntu@ip-172-31-87-243:~$ sudo mount /dev/xvdb  /home/ubuntu/mydata<br/>
+
 mount: /home/ubuntu/mydata: wrong fs type, bad option, bad superblock on /dev/xvdb, missing codepage or helper program, or other error.<br/><br/>
 
 Creating FileSystem<br/>
@@ -92,10 +94,15 @@ log      =internal log           bsize=4096   blocks=2560, version=2<br/>
          =                       sectsz=512   sunit=0 blks, lazy-count=1<br/>
 realtime =none                   extsz=4096   blocks=0, rtextents=0<br/>
 <br/><br/>
+
  ubuntu@ip-172-31-87-243:~$ sudo file -s /dev/xvdb<br/>
+ 
 /dev/xvdb: SGI XFS filesystem data (blksz 4096, inosz 512, v2 dirs)
+
 <br/><br/>
+
 Mounting the 20GB EBS volume to mydata folder<br/>
+
 ubuntu@ip-172-31-87-243:~$ sudo mount /dev/xvdb  /home/ubuntu/mydata/
 
 <br/><br/>
@@ -259,9 +266,13 @@ tmpfs            97M  4.0K   97M   1% /run/user/1000<br/>
 
 ubuntu@ip-172-31-85-206:~$ mkdir another_folder<br/>
 
+
 ubuntu@ip-172-31-85-206:~$ ls<br/>
+
 another_folder<br/>
+
 <br/>
+
 ubuntu@ip-172-31-85-206:~$ sudo mount /dev/xvdf  /home/ubuntu/another_folder/<br/>
 
 <br/>

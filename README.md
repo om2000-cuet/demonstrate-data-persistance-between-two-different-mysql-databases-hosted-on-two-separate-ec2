@@ -34,6 +34,7 @@ Check volume<br/>
 
  
 ubuntu@ip-172-31-87-243:~$ sudo df -h<br/><br/>
+
 Filesystem      Size  Used Avail Use% Mounted on<br/>
 /dev/root       7.6G  2.3G  5.3G  31% /<br/>
 tmpfs           483M     0  483M   0% /dev/shm<br/>
@@ -58,12 +59,15 @@ xvda     202:0    0     8G  0 disk
 └─xvda15 202:15   0   106M  0 part /boot/efi
 xvdb     202:16   0    20G  0 disk
 <br/><br/>
+
 ubuntu@ip-172-31-87-243:~$ pwd<br/>
 /home/ubuntu
+
 <br/><br/>
 Creating a folder named mydata  in /home/ubuntu
 <br/><br/>
 ubuntu@ip-172-31-87-243:~$ mkdir mydata<br/>
+
 ubuntu@ip-172-31-87-243:~$ ls<br/>
 mydata<br/>
  <br/><br/>
@@ -76,6 +80,7 @@ ubuntu@ip-172-31-87-243:~$ sudo file -s /dev/xvdb<br/>
 /dev/xvdb: data<br/>
 
 ubuntu@ip-172-31-87-243:~$ sudo mkfs -t xfs /dev/xvdb<br/><br/>
+
 meta-data=/dev/xvdb              isize=512    agcount=4, agsize=1310720 blks<br/>
          =                       sectsz=512   attr=2, projid32bit=1<br/>
          =                       crc=1        finobt=1, sparse=1, rmapbt=0<br/>
@@ -228,6 +233,7 @@ sudo docker run hello-world<br/>
  Then attach the 20GB EBS volume to the New EC2 instance<br/>
  
  ubuntu@ip-172-31-85-206:~$ lsblk<br/><br/>
+ 
 NAME     MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS<br/>
 loop0      7:0    0  24.4M  1 loop /snap/amazon-ssm-agent/6312<br/>
 loop1      7:1    0  55.6M  1 loop /snap/core18/2745<br/>
@@ -241,6 +247,7 @@ xvda     202:0    0     8G  0 disk<br/>
 xvdf     202:80   0    20G  0 disk<br/>
 <br/>
 ubuntu@ip-172-31-85-206:~$ sudo df -h<br/>
+
 Filesystem      Size  Used Avail Use% Mounted on<br/>
 /dev/root       7.6G  2.3G  5.3G  31% /<br/>
 tmpfs           483M     0  483M   0% /dev/shm<br/>
@@ -249,7 +256,9 @@ tmpfs           5.0M     0  5.0M   0% /run/lock<br/>
 /dev/xvda15     105M  6.1M   99M   6% /boot/efi<br/>
 tmpfs            97M  4.0K   97M   1% /run/user/1000<br/>
 <br/><br/>
+
 ubuntu@ip-172-31-85-206:~$ mkdir another_folder<br/>
+
 ubuntu@ip-172-31-85-206:~$ ls<br/>
 another_folder<br/>
 <br/>

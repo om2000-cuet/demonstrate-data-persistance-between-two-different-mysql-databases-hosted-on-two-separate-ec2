@@ -332,11 +332,17 @@ services:<br/>
 ubuntu@ip-172-31-85-206:~$ sudo docker compose up<br/>
 <br/>
 ubuntu@ip-172-31-85-206:~$ sudo docker exec -it db bash<br/>
+
 bash-4.4# mysql -u root -p<br/>
+
 Enter password:<br/>
+
 Welcome to the MySQL monitor.  Commands end with ; or \g.<br/>
+
 <br/>
+
 mysql> show databases;<br/>
+
 +--------------------+<br/>
 | Database           |<br/>
 +--------------------+<br/>
